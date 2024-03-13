@@ -1,0 +1,45 @@
+{
+  "name": "avito-clone-challenge",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js --ignore sessions --ext js,jsx",
+    "dbMigSeed": "npx sequelize db:migrate && db:seed:all"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/register": "^7.23.7",
+    "@faker-js/faker": "^8.4.1",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "~4.16.0",
+    "express-session": "^1.18.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sequelize": "^6.37.1",
+    "session-file-store": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "sequelize-cli": "^6.6.2"
+  },
+  "description": "* Создайте макет, чтобы смоделировать представления(views) приложения\r * Используйте Sequelize\r * Выполните все четыре части [CRUD][]: создавать, читать, обновлять и удалять. \r * Используйте шаблон MVC",
+  "main": ".eslintrc.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
